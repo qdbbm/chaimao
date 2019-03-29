@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>弹窗</title>
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+  <style>
+    .mbui-btn+.mbui-btn {
+      margin: 20px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="mbui-header">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">弹窗</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page">
+      <div class="mbui-pd-20">
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-dxt');">课程详情单选题弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-hdzq');">回答正确弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-hdcw');">回答错误弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-ljgm');">立即购买弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-kcjs');">课程介绍弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-share');">分享到朋友圈弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-buy-success');">购买成功</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-buqian');">补签弹窗</a>
+
+        <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round"
+          href="javascript:common.openDialog('dialog-tongguan');">通关弹窗</a>
+      </div>
+    </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <div class="mbui-dialog-wrap" id="dialog-dxt">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover" style="background-image: url(images/bg1.jpg);">
+        <p>
+          ppt新建页面后如何<br>
+          设置动效？
+        </p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <label class="mbui-radio mbui-radio--db">
+            <input class="mbui-radio-input" name="r1" type="radio">
+            <span class="mbui-radio__txt">不能添加</span>
+          </label>
+          <label class="mbui-radio mbui-radio--db mbui-mt-10">
+            <input class="mbui-radio-input" name="r1" type="radio">
+            <span class="mbui-radio__txt">系统自动添加</span>
+          </label>
+          <label class="mbui-radio mbui-radio--db mbui-mt-10">
+            <input class="mbui-radio-input" name="r1" type="radio" checked="checked">
+            <span class="mbui-radio__txt">点击工具栏</span>
+          </label>
+          <a class="mbui-btn mbui-btn-block mbui-btn-primary mbui-btn-round mbui-btn-primary--enhance mbui-mt-30"
+            href="#">提交答案</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-dxt');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 课程详情单选题弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-hdzq">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover" style="background-image: url(images/bg2.jpg);">
+        <i class="icon icon-happy"></i>
+        <p class="mbui-mt-10">回答正确</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <div class="mbui-fs-15">
+            <p>恭喜您完成今天的学习</p>
+            <p class="mbui-color-danger">已获得1.6元红包</p>
+            <p class="mbui-mt-25 mbui-color-gray-light">
+              提示：您的红包金额请在个人中心<br>
+              钱包里提现
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-hdzq');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 回答正确弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-hdcw">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover" style="background-image: url(images/bg1.jpg);">
+        <i class="icon icon-sad"></i>
+        <p class="mbui-mt-10">很遗憾，回答错误！</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <div class="mbui-fs-15 mbui-ptb-30">
+            <p>重新学习即可完成今日打卡.</p>
+          </div>
+          <a class="mbui-btn mbui-btn-block mbui-btn-primary mbui-btn-round mbui-btn-primary--enhance mbui-mt-20"
+            href="#">重新学习</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-hdcw');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 回答错误弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-ljgm">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog">
+      <div class="mbui-bg-white mbui-ptb-30 mbui-plr-15">
+        <h3 class="mbui-fs-18 mbui-tac mbui-fw-700">柴猫PPT提升技能第一节</h3>
+        <ul class="mod-dialog-info mbui-mt-20">
+          <li class="mod-dialog-info__item">
+            课程费用200元
+          </li>
+          <li class="mod-dialog-info__item">
+            +学习完成奖励神秘大红包
+          </li>
+          <li class="mod-dialog-info__item">
+            +打卡退还+100元
+          </li>
+        </ul>
+        <ul class="mbui-line-list mbui-line-list--flex">
+          <li class="mbui-line-item mbui-bb">
+            <p class="item-tt">已选择60-30优惠券</p>
+            <i class="mbui-icon-v-right"></i>
+          </li>
+        </ul>
+        <div class="mbui-mt-10 mbui-tar">
+          合计：<span class="mbui-color-second">￥<span class="mbui-fs-24">200</span></span>
+        </div>
+        <a class="mbui-btn mbui-btn-second mbui-btn-second--enhance mbui-btn-block mbui-btn-round mbui-mt-20"
+          href="#">确认购买</a>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-ljgm');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 立即购买弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-kcjs">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover mbui-pb-50" style="background-image: url(images/bg3.jpg);">
+        <p>还在犹豫<br>联系督学班长了解一下？</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd mbui-pt-0">
+          <span class="user-avatar mbui-bg-cover" style="background-image: url(images/user.jpg)"></span>
+          <div class="mbui-fs-15 mbui-mt-5">
+            <p>柴猫PPT星级督学班长</p>
+            <p>智慧与美貌并存的PPT达人</p>
+          </div>
+          <div class="mbui-mt-30">
+            <a class="mbui-btn mbui-btn-second mbui-btn-primary--enhance mbui-btn-block mbui-btn-round"
+              href="#">重新支付</a>
+            <a class="mbui-btn mbui-btn-second mbui-btn-second--enhance mbui-btn-block mbui-btn-round mbui-mt-10"
+              href="#">和他聊聊</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-kcjs');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 课程介绍弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-share">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-full-width">
+      <span class="mod-dialog-arrow"></span>
+    </div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover" style="background-image: url(images/bg2.jpg);">
+        <i class="icon icon-happy"></i>
+        <p class="mbui-mt-10">您已学习完全部课程！</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <div class="mbui-fs-15">
+            <p>请分享至朋友圈</p>
+            <p class="mbui-color-danger mbui-mt-10">拿到最终奖励资金吧！</p>
+          </div>
+          <a class="mbui-btn mbui-btn-second mbui-btn-second--enhance mbui-btn-block mbui-btn-round mbui-mt-50"
+            href="#">分享到朋友圈</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-share');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 分享到朋友圈弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-buy-success">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-full-width">
+      <span class="mod-dialog-arrow"></span>
+    </div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover mbui-ptb-20" style="background-image: url(images/bg4.jpg);">
+        <i class="icon icon-success"></i>
+        <p class="mbui-mt-10">购买成功！</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <div class="mbui-fs-15">
+            <p class="mbui-color-second">分享至朋友圈<br>即可获得红包奖励</p>
+            <p class="mbui-mt-10">请转发朋友圈,参与到每日观看一节<br>课程返现活动</p>
+          </div>
+          <a class="mbui-btn mbui-btn-second mbui-btn-second--enhance mbui-btn-block mbui-btn-round mbui-mt-30"
+            href="#">分享到朋友圈</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-buy-success');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 购买成功弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-buqian">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-full-width">
+      <span class="mod-dialog-arrow"></span>
+    </div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover" style="background-image: url(images/bg5.jpg);">
+        <p class="mbui-fw-700">补签</p>
+        <p class="mbui-mt-10 mbui-fs-15">已补签2/5次</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <p class="mbui-pt-20 mbui-pb-30 mbui-fs-15">
+            转发朋友圈<br>可重新激活该课程签到
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-buqian');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 补签弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-tongguan">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-full-width">
+      <span class="mod-dialog-arrow"></span>
+    </div>
+    <div class="mbui-dialog">
+      <div class="mod-dialog-hd mbui-bg-cover mbui-pb-40" style="background-image: url(images/bg4.jpg);">
+        <p>恭喜您通关了该课程！</p>
+      </div>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <div class="mod-dialog-bd">
+          <p class="mbui-pt-20 mbui-pb-30 mbui-fs-15">
+            分享朋友圈即可<br><span class="mbui-color-second">获得终极大红包奖励</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-tongguan');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 通关弹窗 -->
+
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/mbui.min.js"></script>
+</body>
+
+</html>

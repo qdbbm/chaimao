@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>个人中心</title>
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <header class="mbui-header mbui-header--transparent mbui-header--no-fixed">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">个人中心</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page mbui-page--has-footer">
+      <div class="mod-wrap mod-wrap--style-1 mbui-mb-20">
+        <div class="mod-wrap__bg"></div>
+        <div class="mbui-tac">
+          <span class="user-avatar mbui-bg-cover" style="background-image: url(images/user.jpg)"></span>
+          <p class="mbui-fs-16 mbui-mt-5 mbui-color-white">是个小仙女呀</p>
+          <p>
+            <i class="icon icon-smile"></i>
+            <span class="mbui-vam" style="color: #f6e272;">已坚持学习了20天 </span>
+          </p>
+        </div>
+
+        <div class="mod-wrap__inner mbui-mt-10 mbui-plr-15 mbui-pb-20">
+          <ul class="mbui-line-list mbui-line-list--flex user-menu">
+            <li class="mbui-line-item" onclick="javascript:common.goPage('qianbao.html');">
+              <span class="item-icon"><i class="icon icon-qb"></i></span>
+              <p class="item-tt mbui-vam">我的钱包</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+            <li class="mbui-line-item" onclick="javascript:common.goPage('order.html');">
+              <span class="item-icon"><i class="icon icon-order"></i></span>
+              <p class="item-tt">我的订单</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+            <li class="mbui-line-item" onclick="javascript:common.goPage('coupon.html');">
+              <span class="item-icon"><i class="icon icon-coupon"></i></span>
+              <p class="item-tt">我的优惠券</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+            <li class="mbui-line-item" onclick="javascript:common.goPage('studyRecord.html');">
+              <span class="item-icon"><i class="icon icon-clock"></i></span>
+              <p class="item-tt">学习记录</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+            <li class="mbui-line-item" onclick="javascript:common.goPage('recom.html');">
+              <span class="item-icon"><i class="icon icon-recom"></i></span>
+              <p class="item-tt">我的推荐</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+            <li class="mbui-line-item" onclick="javascript:common.goPage('question.html');">
+              <span class="item-icon"><i class="icon icon-ques"></i></span>
+              <p class="item-tt">常见问题</p>
+              <i class="mbui-icon-v-right"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mod-wrap__inner mbui-mt-20 mbui-plr-15 mbui-pb-20">
+          <div class="mbui-flex-s-b mbui-flex-v-c">
+            <span class="mbui-fs-15">每日学习提醒</span>
+            <div class="mbui-switch">
+              <input class="mbui-switch-input" type="checkbox">
+              <i class="mbui-icon-switch"></i>
+            </div>
+          </div>
+          <div class="mbui-mt-15 mbui-pt-15 mbui-bt">
+            <p class="mbui-color-second mbui-fs-13">温馨提示：</p>
+            <div class="mbui-mt-10 mbui-fs-12 mbui-color-gray-light">
+              <p>1、关闭后每天将不会收到早晚得学习提醒</p>
+              <p>2、开启后每天早晚都会收到学习提醒</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <footer class="mbui-fixed-bottom">
+    <ul class="mbui-nav-list mbui-nav-list--bottom">
+      <li class="mbui-nav-item">
+        <div class="item-icon">
+          <i class="icon-nav icon-video"></i>
+        </div>
+        <p class="item-txt">视频</p>
+      </li>
+      <li class="mbui-nav-item">
+        <div class="item-icon">
+          <i class="icon-nav icon-play"></i>
+        </div>
+        <span class="remind-circle"></span>
+        <p class="item-txt">开始学习</p>
+      </li>
+      <li class="mbui-nav-item">
+        <div class="item-icon">
+          <i class="icon-nav icon-study"></i>
+        </div>
+        <p class="item-txt">我要试学</p>
+      </li>
+      <li class="mbui-nav-item active">
+        <div class="item-icon">
+          <i class="icon-nav icon-user"></i>
+        </div>
+        <p class="item-txt">我的</p>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/mbui.min.js"></script>
+</body>
+
+</html>
