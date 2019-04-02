@@ -42,6 +42,10 @@
             <p class="mod-user-total__num">￥100.00</p>
             <p class="mod-user-total__txt">我的余额</p>
           </div>
+          <div class="mbui-tac">
+            <a class="mbui-dib mbui-pt-10 mbui-color-white" href="javascript:common.openDialog('dialog-tx');">我要提现
+              &gt;</a>
+          </div>
         </div>
 
         <div class="mod-wrap__inner mbui-mt-15 mbui-plr-15 mbui-pb-30">
@@ -172,6 +176,30 @@
       </li>
     </ul>
   </footer>
+
+  <div class="mbui-dialog-wrap" id="dialog-tx">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog mbui-bg-white">
+      <div class="mbui-dialog-bd mbui-plr-20">
+        <div class="mbui-flex mbui-ptb-5 mbui-bb">
+          <span class="mbui-fs-30 mbui-mr-10">￥</span>
+          <input class="mbui-input mbui-flex1 mbui-fs-16" type="number" placeholder="请输入提现金额">
+        </div>
+        <div class="mbui-flex mbui-ptb-15 mbui-bb">
+          <input class="mbui-input mbui-flex1 mbui-fs-16" type="text" placeholder="请输入支付宝账号">
+        </div>
+        <div class="mbui-mt-10 mbui-tal mbui-fs-12 mbui-color-gray">
+          <p>最高提现金额￥9998元，最低提现金额￥100</p>
+          <p>提现手续费为2%</p>
+        </div>
+      </div>
+      <div class="mbui-dialog-ft mbui-mt-10">
+        <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-no-radius" href="#">提现</a>
+        <a class="mbui-btn mbui-btn-block mbui-btn-no-radius" href="javascript:common.closeDialog('dialog-tx');">取消</a>
+      </div>
+    </div>
+  </div>
+  <!-- end 提现弹窗 -->
 
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
