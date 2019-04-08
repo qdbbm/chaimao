@@ -413,6 +413,13 @@ body {
 .mod-swiper-tle {
   margin: 0 -3px 0 -3px;
 
+  &--auto {
+    .swiper-slide {
+      width: auto;
+      min-width: 25%;
+    }
+  }
+
   .swiper-slide {
     padding: 0 3px;
 
@@ -818,4 +825,10 @@ body {
     background: #fbfbfd;
     border-radius: 30px;
   }
+}
+
+.ios-fixed-input {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+  height: 100% !important;
 }

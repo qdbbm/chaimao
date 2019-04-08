@@ -52,16 +52,22 @@
           <h3 class="mod-tle">课程列表</h3>
 
           <div class="mod-swiper-tab mbui-mlr-10 mbui-mt-10">
-            <div class="swiper-container mod-swiper-tle" id="mbui-swiper-tab-tle">
+            <div class="swiper-container mod-swiper-tle mod-swiper-tle--auto" id="mbui-swiper-tab-tle">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide active">
-                  <span>文字处理</span>
+                  <span>文字处理文字处理</span>
                 </li>
                 <li class="swiper-slide">
                   <span>图片处理</span>
                 </li>
                 <li class="swiper-slide">
                   <span>排版</span>
+                </li>
+                <li class="swiper-slide">
+                  <span>美学</span>
+                </li>
+                <li class="swiper-slide">
+                  <span>美学</span>
                 </li>
                 <li class="swiper-slide">
                   <span>美学</span>
@@ -185,7 +191,7 @@
   <script src="js/mbui.min.js"></script>
   <script>
     // swiper tab 初始化
-    swiper.initSwiperTab(4, $('#mbui-swiper-tab-tle'), $('#swiper-tab-container'));
+    swiper.initSwiperTab('auto', $('#mbui-swiper-tab-tle'), $('#swiper-tab-container'));
   </script>
 </body>
 

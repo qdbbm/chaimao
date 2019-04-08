@@ -7,6 +7,14 @@ $(function () {
         $(this).parent().siblings('.mod-tab-content').find('.mod-tab-pane:eq(' + $(this).index() + ')').removeClass('mbui-hide');
     })
 
+    // $('input').on('focus', function () {
+    //     $('html,body').addClass('ios-fixed-input');
+    // })
+
+    // $('input').on('blur', function () {
+    //     $('html,body').removeClass('ios-fixed-input');
+    // })
+
 })
 
 function openShareTips() {
