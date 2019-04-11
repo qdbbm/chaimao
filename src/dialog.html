@@ -183,19 +183,21 @@
             +打卡退还+100元
           </li>
         </ul>
-        <ul class="mbui-line-list mbui-line-list--flex">
-          <li class="mbui-line-item mbui-bb">
-            <p>已选择</p>
-            <div class="item-tt">
-              <select class="mob-select">
-                <option value="10">10元优惠券</option>
-                <option value="20">20元优惠券</option>
-                <option value="30">30元优惠券</option>
-              </select>
+        <div>
+          <div class="mbui-form-item" onclick="javascript:common.openDialog('dialog-coupon');">
+            <label class="item-label">已选择</label>
+            <div class="item-field mbui-tar">
+              10元优惠券
             </div>
             <i class="mbui-icon-v-right"></i>
-          </li>
-        </ul>
+          </div>
+          <div class="mbui-form-item">
+            <label class="item-label">输入邀请码</label>
+            <div class="item-field mbui-tar">
+              <input type="text" class="mbui-text mbui-tar" placeholder="请输入邀请码">
+            </div>
+          </div>
+        </div>
         <div class="mbui-mt-10 mbui-tar">
           合计：<span class="mbui-color-second">￥<span class="mbui-fs-24">200</span></span>
         </div>
@@ -211,6 +213,91 @@
     </a>
   </div>
   <!-- end 立即购买弹窗 -->
+
+  <div class="mbui-dialog-wrap" id="dialog-coupon">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog mbui-bg-white">
+      <h3 class="mbui-ptb-10 mbui-tac">请选择优惠券</h3>
+      <div class="mbui-dialog-bd mbui-pd-0">
+        <ul class="mod-coupon-list mbui-tal">
+          <li class="mod-coupon-item">
+            <label class="mbui-radio">
+              <input class="mbui-radio-input" type="radio" name="r1" checked>
+              <i class="mbui-icon-radio"></i>
+            </label>
+            <div class="mod-coupon-item__side">
+              <p class="mcis-num">￥<span class="mcis-num-txt">20</span></p>
+              <p class="mcis-txt">满50元可用</p>
+              <span class="mcis-dot"></span>
+            </div>
+            <div class="mod-coupon-item__bd">
+              <div class="mcib-inner">
+                <p class="mcib-tle">柴猫PPT无门槛立减券柴/p>
+                  <p class="mcib-txt">2019.03.01~2019.03.31</p>
+              </div>
+            </div>
+          </li>
+          <li class="mod-coupon-item">
+            <label class="mbui-radio">
+              <input class="mbui-radio-input" type="radio" name="r1">
+              <i class="mbui-icon-radio"></i>
+            </label>
+            <div class="mod-coupon-item__side">
+              <p class="mcis-num">￥<span class="mcis-num-txt">20</span></p>
+              <p class="mcis-txt">满50元可用</p>
+              <span class="mcis-dot"></span>
+            </div>
+            <div class="mod-coupon-item__bd">
+              <div class="mcib-inner">
+                <p class="mcib-tle">柴猫PPT无门槛立减券柴/p>
+                  <p class="mcib-txt">2019.03.01~2019.03.31</p>
+              </div>
+            </div>
+          </li>
+          <li class="mod-coupon-item">
+            <label class="mbui-radio">
+              <input class="mbui-radio-input" type="radio" name="r1">
+              <i class="mbui-icon-radio"></i>
+            </label>
+            <div class="mod-coupon-item__side">
+              <p class="mcis-num">￥<span class="mcis-num-txt">20</span></p>
+              <p class="mcis-txt">满50元可用</p>
+              <span class="mcis-dot"></span>
+            </div>
+            <div class="mod-coupon-item__bd">
+              <div class="mcib-inner">
+                <p class="mcib-tle">柴猫PPT无门槛立减券柴/p>
+                  <p class="mcib-txt">2019.03.01~2019.03.31</p>
+              </div>
+            </div>
+          </li>
+          <li class="mod-coupon-item">
+            <div class="mod-coupon-item__side">
+              <p class="mcis-num">￥<span class="mcis-num-txt">20</span></p>
+              <p class="mcis-txt">满50元可用</p>
+              <span class="mcis-dot"></span>
+            </div>
+            <div class="mod-coupon-item__bd">
+              <div class="mcib-inner">
+                <p class="mcib-tle">柴猫PPT无门槛立减券柴/p>
+                  <p class="mcib-txt">2019.03.01~2019.03.31</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="mbui-pd-10 mbui-plr-20">
+          <a class="mbui-btn mbui-btn-outline mbui-btn-block mbui-btn-round" href="javascript:common.closeDialog('dialog-coupon');">不使用优惠券</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="mbui-dialog-close" href="javascript:common.closeDialog('dialog-coupon');">
+      <svg class="mbui-icon" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <!-- end 优惠券弹窗 -->
 
   <div class="mbui-dialog-wrap" id="dialog-kcjs">
     <div class="mbui-overlay"></div>
