@@ -19,7 +19,7 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="mbui-full-height mbui-page-flex">
   <header class="mbui-header">
     <div class="mbui-header-left" onclick="javascript:history.back();">
       <i class="mbui-icon-v-left mbui-header-icon"></i>
@@ -34,8 +34,8 @@
   <!-- 头部 -->
 
   <main id="pages" class="mbui-page-wrap">
-    <div class="mbui-page mbui-page--has-footer">
-      <div class="mod-wrap mbui-pb-30 mbui-mt-10">
+    <div class="mbui-page">
+      <div class="mod-wrap">
         <div class="mod-wrap__bg"></div>
         <div class="mod-wrap__inner mbui-pd-10">
           <video class="mod-video" src="http://www.w3school.com.cn/i/movie.ogg" controls="controls">
@@ -43,36 +43,47 @@
           </video>
         </div>
 
-        <p class="mod-tips mbui-pt-5 mbui-pb-10">
+        <p class="mod-tips mbui-mt-5">
           <i class="icon icon-deng"></i>
           <span class="mbui-vam">可以在电脑版本微信中用微信浏览器打开排版视频哦~</span>
         </p>
+      </div>
 
+      <div class="mbui-page-container">
         <div class="mod-wrap__inner">
           <h3 class="mod-tle">课程列表</h3>
 
           <div class="mod-swiper-tab mbui-mlr-10 mbui-mt-10">
-            <div class="swiper-container mod-swiper-tle mod-swiper-tle--auto" id="mbui-swiper-tab-tle">
+            <!-- <div class="swiper-container mod-swiper-tle mod-swiper-tle--auto mod-swiper-tle--wrap"
+              id="mbui-swiper-tab-tle">
               <ul class="swiper-wrapper">
-                <li class="swiper-slide active">
+                <li class="swiper-slide active swiper-no-swiping">
                   <span>文字处理文字处理</span>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide swiper-no-swiping">
                   <span>图片处理</span>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide swiper-no-swiping">
                   <span>排版</span>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide swiper-no-swiping">
                   <span>美学</span>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide swiper-no-swiping">
                   <span>美学</span>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide swiper-no-swiping">
                   <span>美学</span>
                 </li>
               </ul>
+            </div> -->
+            <div class="mod-tab-tle js-tab-tle">
+              <div class="mod-tab-tle__inner mbui-clearfix">
+                <a class="mod-tab-tle__item active" href="javascript:;">文字处理文字处理</a>
+                <a class="mod-tab-tle__item" href="javascript:;">图片处理</a>
+                <a class="mod-tab-tle__item" href="javascript:;">排版</a>
+                <a class="mod-tab-tle__item" href="javascript:;">美学</a>
+              </div>
             </div>
             <!-- end 标题 -->
 
@@ -150,48 +161,69 @@
           <!-- end tab -->
         </div>
       </div>
+
+      <footer>
+        <ul class="mbui-nav-list mbui-nav-list--bottom">
+          <li class="mbui-nav-item">
+            <div class="item-icon">
+              <i class="icon-nav icon-video"></i>
+            </div>
+            <p class="item-txt">视频</p>
+          </li>
+          <li class="mbui-nav-item">
+            <div class="item-icon">
+              <i class="icon-nav icon-play"></i>
+            </div>
+            <span class="remind-circle"></span>
+            <p class="item-txt">开始学习</p>
+          </li>
+          <li class="mbui-nav-item">
+            <div class="item-icon">
+              <i class="icon-nav icon-study"></i>
+            </div>
+            <p class="item-txt">我要试学</p>
+          </li>
+          <li class="mbui-nav-item" onclick="javascript:common.goPage('my.html');">
+            <div class="item-icon">
+              <i class="icon-nav icon-user"></i>
+            </div>
+            <p class="item-txt">我的</p>
+          </li>
+        </ul>
+      </footer>
     </div>
     <!-- end .page -->
   </main>
   <!-- end .page-wrap -->
 
-  <footer class="mbui-fixed-bottom">
-    <ul class="mbui-nav-list mbui-nav-list--bottom">
-      <li class="mbui-nav-item">
-        <div class="item-icon">
-          <i class="icon-nav icon-video"></i>
-        </div>
-        <p class="item-txt">视频</p>
-      </li>
-      <li class="mbui-nav-item">
-        <div class="item-icon">
-          <i class="icon-nav icon-play"></i>
-        </div>
-        <span class="remind-circle"></span>
-        <p class="item-txt">开始学习</p>
-      </li>
-      <li class="mbui-nav-item">
-        <div class="item-icon">
-          <i class="icon-nav icon-study"></i>
-        </div>
-        <p class="item-txt">我要试学</p>
-      </li>
-      <li class="mbui-nav-item" onclick="javascript:common.goPage('my.html');">
-        <div class="item-icon">
-          <i class="icon-nav icon-user"></i>
-        </div>
-        <p class="item-txt">我的</p>
-      </li>
-    </ul>
-  </footer>
-
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
   <script src="js/plugins/swiper.min.js"></script>
   <script src="js/mbui.min.js"></script>
-  <script>
-    // swiper tab 初始化
-    swiper.initSwiperTab('auto', $('#mbui-swiper-tab-tle'), $('#swiper-tab-container'));
+  <script>    
+
+    $(function () {
+
+      // tab切换
+      var _conSwiper = new Swiper('#swiper-tab-container', {
+        autoHeight: true,
+        observer: true,
+        observeParents: true,
+        on: {
+          slideChangeTransitionEnd: function () {
+            var _tabTles =  $('.js-tab-tle').find('.mod-tab-tle__item');
+            _tabTles.removeClass('active');
+            _tabTles.eq(this.activeIndex).addClass('active');
+          }
+        }
+      });
+
+      $('.js-tab-tle').on('click', '.mod-tab-tle__item', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        _conSwiper.slideTo($(this).index(), 500, false);
+      })
+
+    })
   </script>
 </body>
 
